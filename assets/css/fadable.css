@@ -1,0 +1,11 @@
+.fadable {
+  transition: opacity 1s;
+  -webkit-transition: opacity 5s;
+  opacity: 1;
+  margin: auto;
+}
+
+.faded {
+  opacity: 0.01;
+}
+

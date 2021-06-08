@@ -1,0 +1,12 @@
+@font-face {
+	font-family: 'GlacialIndifference-Bold';
+	src: url(../../assets/fonts/GlacialIndifference-Bold.eot) format('embedded-opentype'),
+	url(../../assets/fonts/GlacialIndifference-Bold.eot) format('embedded-opentype'),
+	url(../../assets/fonts/GlacialIndifference-Bold.otf) format('otf'),
+	url(../../assets/fonts/GlacialIndifference-Bold.svg) format('svg'),
+	url(../../assets/fonts/GlacialIndifference-Bold.ttf) format('truetype'),
+	url(../../assets/fonts/GlacialIndifference-Bold.woff) format('woff'),
+	url(../../assets/fonts/GlacialIndifference-Bold.woff2) format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}

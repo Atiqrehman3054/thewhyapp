@@ -1,0 +1,12 @@
+@font-face {
+	font-family: 'JetBrainsMono-Regular';
+	src: url(../../assets/fonts/JetBrainsMono-Regular.eot) format('embedded-opentype'),
+	url(../../assets/fonts/JetBrainsMono-Regular.eot) format('embedded-opentype'),
+	url(../../assets/fonts/JetBrainsMono-Regular.otf) format('otf'),
+	url(../../assets/fonts/JetBrainsMono-Regular.svg) format('svg'),
+	url(../../assets/fonts/JetBrainsMono-Regular.ttf) format('truetype'),
+	url(../../assets/fonts/JetBrainsMono-Regular.woff) format('woff'),
+	url(../../assets/fonts/JetBrainsMono-Regular.woff2) format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}

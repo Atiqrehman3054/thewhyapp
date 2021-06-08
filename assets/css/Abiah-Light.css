@@ -1,0 +1,12 @@
+@font-face {
+	font-family: 'Abiah-Light';
+	src: url(../../assets/fonts/Abiah-Light.eot) format('embedded-opentype'),
+	url(../../assets/fonts/Abiah-Light.eot) format('embedded-opentype'),
+	url(../../assets/fonts/Abiah-Light.otf) format('otf'),
+	url(../../assets/fonts/Abiah-Light.svg) format('svg'),
+	url(../../assets/fonts/Abiah-Light.ttf) format('truetype'),
+	url(../../assets/fonts/Abiah-Light.woff) format('woff'),
+	url(../../assets/fonts/Abiah-Light.woff2) format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}

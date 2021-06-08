@@ -1,0 +1,12 @@
+@font-face {
+	font-family: 'JetBrainsMono-Medium-Italic';
+	src: url(../../assets/fonts/JetBrainsMono-Medium-Italic.eot) format('embedded-opentype'),
+	url(../../assets/fonts/JetBrainsMono-Medium-Italic.eot) format('embedded-opentype'),
+	url(../../assets/fonts/JetBrainsMono-Medium-Italic.otf) format('otf'),
+	url(../../assets/fonts/JetBrainsMono-Medium-Italic.svg) format('svg'),
+	url(../../assets/fonts/JetBrainsMono-Medium-Italic.ttf) format('truetype'),
+	url(../../assets/fonts/JetBrainsMono-Medium-Italic.woff) format('woff'),
+	url(../../assets/fonts/JetBrainsMono-Medium-Italic.woff2) format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}

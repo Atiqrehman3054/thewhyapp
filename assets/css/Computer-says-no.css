@@ -1,0 +1,12 @@
+@font-face {
+	font-family: 'Computer-says-no';
+	src: url(../../assets/fonts/computer-says-no.eot) format('embedded-opentype'),
+	url(../../assets/fonts/computer-says-no.eot) format('embedded-opentype'),
+	url(../../assets/fonts/computer-says-no.otf) format('otf'),
+	url(../../assets/fonts/computer-says-no.svg) format('svg'),
+	url(../../assets/fonts/computer-says-no.ttf) format('truetype'),
+	url(../../assets/fonts/computer-says-no.woff) format('woff'),
+	url(../../assets/fonts/computer-says-no.woff2) format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
