@@ -1,12 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:why_app/RelationShip.dart';
 import 'package:why_app/main.dart';
+import 'HotTopics.dart';
+import 'Parents.dart';
+import 'Inlaws.dart';
+import 'Siblings.dart';
+import 'Friends.dart';
+import 'Work.dart';
+import 'Money.dart';
+import 'Single.dart';
 
-class Firstpage extends StatefulWidget {
+
+class HomePage extends StatefulWidget {
   @override
-  _FirstpageState createState() => _FirstpageState();
+  _HomePageState createState() => _HomePageState();
 }
 
-class _FirstpageState extends State<Firstpage> {
+class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(child: Scaffold(
@@ -67,14 +77,19 @@ class _FirstpageState extends State<Firstpage> {
                   itemBuilder: (BuildContext context, int index) {
                     return Padding(
                       padding: const EdgeInsets.only(left: 10),
-                      child: Container(
-                        height: 100,
-                        width: 120,
-                        decoration: BoxDecoration(
-                          color: Colors.red[100],
-                          borderRadius: BorderRadius.circular(4.0),
+                      child: InkWell(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => RelationShip()));
+                        },
+                        child: Container(
+                          height: 100,
+                          width: 120,
+                          decoration: BoxDecoration(
+                            color: Colors.red[100],
+                            borderRadius: BorderRadius.circular(4.0),
+                          ),
+                          child: Text('Text'),
                         ),
-                        child: Text('Text'),
                       ),
                     );
                   }),
@@ -117,14 +132,20 @@ class _FirstpageState extends State<Firstpage> {
                   itemBuilder: (BuildContext context, int index) {
                     return Padding(
                       padding: const EdgeInsets.only(left: 10),
-                      child: Container(
-                        height: 100,
-                        width: 120,
-                        decoration: BoxDecoration(
-                          color: Colors.red[100],
-                          borderRadius: BorderRadius.circular(4.0),
+                      child: InkWell(
+                        onTap:(){
+
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => Single()));
+                        },
+                        child: Container(
+                          height: 100,
+                          width: 120,
+                          decoration: BoxDecoration(
+                            color: Colors.red[100],
+                            borderRadius: BorderRadius.circular(4.0),
+                          ),
+                          child: Text('Text'),
                         ),
-                        child: Text('Text'),
                       ),
                     );
                   }),
@@ -170,19 +191,28 @@ class _FirstpageState extends State<Firstpage> {
                   itemBuilder: (BuildContext context, int index) {
                     return Padding(
                       padding: const EdgeInsets.only(left: 10),
-                      child: Container(
-                        height: 100,
-                        width: 120,
-                        decoration: BoxDecoration(
-                          color: Colors.red[100],
-                          borderRadius: BorderRadius.circular(4.0),
+                      child: InkWell(
+                        onTap:(){
+
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => Parents()));
+                        },
+                        child: Container(
+                          height: 100,
+                          width: 120,
+                          decoration: BoxDecoration(
+                            color: Colors.red[100],
+                            borderRadius: BorderRadius.circular(4.0),
+                          ),
+                          child: Text('Text'),
                         ),
-                        child: Text('Text'),
                       ),
                     );
                   }),
             ),
           ),
+
+
+
           Padding(
             padding: const EdgeInsets.only(top: 20, left: 30, right: 280),
             child: Container(
@@ -223,19 +253,28 @@ class _FirstpageState extends State<Firstpage> {
                   itemBuilder: (BuildContext context, int index) {
                     return Padding(
                       padding: const EdgeInsets.only(left: 10),
-                      child: Container(
-                        height: 100,
-                        width: 120,
-                        decoration: BoxDecoration(
-                          color: Colors.red[100],
-                          borderRadius: BorderRadius.circular(4.0),
+                      child: InkWell(
+                        onTap:(){
+
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => Inlaws()));
+                        },
+                        child: Container(
+                          height: 100,
+                          width: 120,
+                          decoration: BoxDecoration(
+                            color: Colors.red[100],
+                            borderRadius: BorderRadius.circular(4.0),
+                          ),
+                          child: Text('Text'),
                         ),
-                        child: Text('Text'),
                       ),
                     );
                   }),
             ),
           ),
+
+
+
           Padding(
             padding: const EdgeInsets.only(top: 20, left: 30, right: 280),
             child: Container(
@@ -276,19 +315,28 @@ class _FirstpageState extends State<Firstpage> {
                   itemBuilder: (BuildContext context, int index) {
                     return Padding(
                       padding: const EdgeInsets.only(left: 10),
-                      child: Container(
-                        height: 100,
-                        width: 120,
-                        decoration: BoxDecoration(
-                          color: Colors.red[100],
-                          borderRadius: BorderRadius.circular(4.0),
+                      child: InkWell(
+                        onTap:(){
+
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => Siblings()));
+                        },
+                        child: Container(
+                          height: 100,
+                          width: 120,
+                          decoration: BoxDecoration(
+                            color: Colors.red[100],
+                            borderRadius: BorderRadius.circular(4.0),
+                          ),
+                          child: Text('Text'),
                         ),
-                        child: Text('Text'),
                       ),
                     );
                   }),
             ),
           ),
+
+
+
           Padding(
             padding: const EdgeInsets.only(top: 20, left: 30, right: 280),
             child: Container(
@@ -329,19 +377,28 @@ class _FirstpageState extends State<Firstpage> {
                   itemBuilder: (BuildContext context, int index) {
                     return Padding(
                       padding: const EdgeInsets.only(left: 10),
-                      child: Container(
-                        height: 100,
-                        width: 120,
-                        decoration: BoxDecoration(
-                          color: Colors.red[100],
-                          borderRadius: BorderRadius.circular(4.0),
+                      child:InkWell(
+                        onTap:(){
+
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => Friends()));
+                        },
+                        child: Container(
+                          height: 100,
+                          width: 120,
+                          decoration: BoxDecoration(
+                            color: Colors.red[100],
+                            borderRadius: BorderRadius.circular(4.0),
+                          ),
+                          child: Text('Text'),
                         ),
-                        child: Text('Text'),
                       ),
                     );
                   }),
             ),
           ),
+
+
+
           Padding(
             padding: const EdgeInsets.only(top: 20, left: 30, right: 280),
             child: Container(
@@ -382,19 +439,28 @@ class _FirstpageState extends State<Firstpage> {
                   itemBuilder: (BuildContext context, int index) {
                     return Padding(
                       padding: const EdgeInsets.only(left: 10),
-                      child: Container(
-                        height: 100,
-                        width: 120,
-                        decoration: BoxDecoration(
-                          color: Colors.red[100],
-                          borderRadius: BorderRadius.circular(4.0),
+                      child: InkWell(
+                        onTap:(){
+
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => Work()));
+                        },
+                        child: Container(
+                          height: 100,
+                          width: 120,
+                          decoration: BoxDecoration(
+                            color: Colors.red[100],
+                            borderRadius: BorderRadius.circular(4.0),
+                          ),
+                          child: Text('Text'),
                         ),
-                        child: Text('Text'),
                       ),
                     );
                   }),
             ),
           ),
+
+
+
           Padding(
             padding: const EdgeInsets.only(top: 20, left: 30, right: 280),
             child: Container(
@@ -435,19 +501,31 @@ class _FirstpageState extends State<Firstpage> {
                   itemBuilder: (BuildContext context, int index) {
                     return Padding(
                       padding: const EdgeInsets.only(left: 10),
-                      child: Container(
-                        height: 100,
-                        width: 120,
-                        decoration: BoxDecoration(
-                          color: Colors.red[100],
-                          borderRadius: BorderRadius.circular(4.0),
+                      child: InkWell(
+                        onTap: (){
+
+
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => Money()));
+
+                        },
+                        child: Container(
+                          height: 100,
+                          width: 120,
+                          decoration: BoxDecoration(
+                            color: Colors.red[100],
+                            borderRadius: BorderRadius.circular(4.0),
+                          ),
+                          child: Text('Text'),
                         ),
-                        child: Text('Text'),
                       ),
                     );
                   }),
             ),
           ),
+
+
+
+
           Padding(
             padding: const EdgeInsets.only(top: 20, left: 30, right: 260),
             child: Container(
@@ -488,14 +566,20 @@ class _FirstpageState extends State<Firstpage> {
                   itemBuilder: (BuildContext context, int index) {
                     return Padding(
                       padding: const EdgeInsets.only(left: 10),
-                      child: Container(
-                        height: 100,
-                        width: 120,
-                        decoration: BoxDecoration(
-                          color: Colors.red[100],
-                          borderRadius: BorderRadius.circular(4.0),
+                      child: InkWell(
+                        onTap:(){
+
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => Hottopic()));
+                        },
+                        child: Container(
+                          height: 100,
+                          width: 120,
+                          decoration: BoxDecoration(
+                            color: Colors.red[100],
+                            borderRadius: BorderRadius.circular(4.0),
+                          ),
+                          child: Text('Text'),
                         ),
-                        child: Text('Text'),
                       ),
                     );
                   }),

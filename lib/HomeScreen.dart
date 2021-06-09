@@ -1,506 +1,49 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:why_app/main.dart';
+import 'HomePage.dart';
+import 'NotificationsScreen.dart';
+import 'ProfileScreen.dart';
+import 'SettingsScreen.dart';
+import 'Brain.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   @override
-  int _currentIndex = 0;
+  _HomeScreenState createState() => _HomeScreenState();
+}
 
+class _HomeScreenState extends State<HomeScreen> {
+  int _currentIndex = 2;
+  List<Widget> tabs = [
+
+    ProfileScreen(),
+    SettingsScreen(),
+    HomePage(),
+    NotificationsScreen(),
+    BrainIcon(),
+
+  ];
+  @override
+  void initState() {
+    tabs = [
+
+      ProfileScreen(),
+      SettingsScreen(),
+      HomePage(),
+      NotificationsScreen(),
+      BrainIcon(),
+
+    ];
+    super.initState();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        body: ListView(
-          children: [
-            Padding(
-              padding: const EdgeInsets.only(top: 30, bottom: 90),
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    decoration: kBoxDecoration(),
-                    child: Image.asset(
-                      'assets/img/backgrounds/whylogorounded.png',
-                      height: 150,
-                      width: 150,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(left: 30, right: 250),
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(4),
-                  color: Colors.pink[50],
-                ),
-                width: 100,
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.favorite_outline_outlined,
-                    ),
-                    Text(
-                      'RELATIONSHIPS',
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(
-                top: 15,
-                left: 20,
-              ),
-              child: Container(
-                height: 100,
-                width: 120,
-                child: ListView.builder(
-                    scrollDirection: Axis.horizontal,
-                    itemCount: 5,
-                    itemBuilder: (BuildContext context, int index) {
-                      return Padding(
-                        padding: const EdgeInsets.only(left: 10),
-                        child: Container(
-                          height: 100,
-                          width: 120,
-                          decoration: BoxDecoration(
-                            color: Colors.red[100],
-                            borderRadius: BorderRadius.circular(4.0),
-                          ),
-                          child: Text('Text'),
-                        ),
-                      );
-                    }),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(top: 20, left: 30, right: 280),
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(4),
-                  color: Colors.grey[400],
-                ),
-                width: 100,
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.person_outline,
-                    ),
-                    Text(
-                      'SINGLE',
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(
-                top: 15,
-                left: 20,
-              ),
-              child: Container(
-                height: 100,
-                width: 120,
-                child: ListView.builder(
-                    scrollDirection: Axis.horizontal,
-                    itemCount: 5,
-                    itemBuilder: (BuildContext context, int index) {
-                      return Padding(
-                        padding: const EdgeInsets.only(left: 10),
-                        child: Container(
-                          height: 100,
-                          width: 120,
-                          decoration: BoxDecoration(
-                            color: Colors.red[100],
-                            borderRadius: BorderRadius.circular(4.0),
-                          ),
-                          child: Text('Text'),
-                        ),
-                      );
-                    }),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(top: 20, left: 30, right: 280),
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(4),
-                  color: Colors.grey[300],
-                ),
-                width: 100,
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.family_restroom_outlined,
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 5),
-                      child: Text(
-                        'PARENTS',
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(
-                top: 15,
-                left: 20,
-              ),
-              child: Container(
-                height: 100,
-                width: 120,
-                child: ListView.builder(
-                    scrollDirection: Axis.horizontal,
-                    itemCount: 5,
-                    itemBuilder: (BuildContext context, int index) {
-                      return Padding(
-                        padding: const EdgeInsets.only(left: 10),
-                        child: Container(
-                          height: 100,
-                          width: 120,
-                          decoration: BoxDecoration(
-                            color: Colors.red[100],
-                            borderRadius: BorderRadius.circular(4.0),
-                          ),
-                          child: Text('Text'),
-                        ),
-                      );
-                    }),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(top: 20, left: 30, right: 280),
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(4),
-                  color: Colors.grey[300],
-                ),
-                width: 100,
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.family_restroom_outlined,
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 5),
-                      child: Text(
-                        'INLAWS',
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(
-                top: 15,
-                left: 20,
-              ),
-              child: Container(
-                height: 100,
-                width: 120,
-                child: ListView.builder(
-                    scrollDirection: Axis.horizontal,
-                    itemCount: 5,
-                    itemBuilder: (BuildContext context, int index) {
-                      return Padding(
-                        padding: const EdgeInsets.only(left: 10),
-                        child: Container(
-                          height: 100,
-                          width: 120,
-                          decoration: BoxDecoration(
-                            color: Colors.red[100],
-                            borderRadius: BorderRadius.circular(4.0),
-                          ),
-                          child: Text('Text'),
-                        ),
-                      );
-                    }),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(top: 20, left: 30, right: 280),
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(4),
-                  color: Colors.grey[300],
-                ),
-                width: 100,
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.family_restroom_outlined,
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 5),
-                      child: Text(
-                        'SIBLINGS',
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(
-                top: 15,
-                left: 20,
-              ),
-              child: Container(
-                height: 100,
-                width: 120,
-                child: ListView.builder(
-                    scrollDirection: Axis.horizontal,
-                    itemCount: 5,
-                    itemBuilder: (BuildContext context, int index) {
-                      return Padding(
-                        padding: const EdgeInsets.only(left: 10),
-                        child: Container(
-                          height: 100,
-                          width: 120,
-                          decoration: BoxDecoration(
-                            color: Colors.red[100],
-                            borderRadius: BorderRadius.circular(4.0),
-                          ),
-                          child: Text('Text'),
-                        ),
-                      );
-                    }),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(top: 20, left: 30, right: 280),
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(4),
-                  color: Colors.grey[300],
-                ),
-                width: 100,
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.family_restroom_sharp,
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 5),
-                      child: Text(
-                        'FRIENDS',
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(
-                top: 15,
-                left: 20,
-              ),
-              child: Container(
-                height: 100,
-                width: 120,
-                child: ListView.builder(
-                    scrollDirection: Axis.horizontal,
-                    itemCount: 5,
-                    itemBuilder: (BuildContext context, int index) {
-                      return Padding(
-                        padding: const EdgeInsets.only(left: 10),
-                        child: Container(
-                          height: 100,
-                          width: 120,
-                          decoration: BoxDecoration(
-                            color: Colors.red[100],
-                            borderRadius: BorderRadius.circular(4.0),
-                          ),
-                          child: Text('Text'),
-                        ),
-                      );
-                    }),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(top: 20, left: 30, right: 280),
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(4),
-                  color: Colors.grey[300],
-                ),
-                width: 100,
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.mail_sharp,
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 5),
-                      child: Text(
-                        'WORK',
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(
-                top: 15,
-                left: 20,
-              ),
-              child: Container(
-                height: 100,
-                width: 120,
-                child: ListView.builder(
-                    scrollDirection: Axis.horizontal,
-                    itemCount: 5,
-                    itemBuilder: (BuildContext context, int index) {
-                      return Padding(
-                        padding: const EdgeInsets.only(left: 10),
-                        child: Container(
-                          height: 100,
-                          width: 120,
-                          decoration: BoxDecoration(
-                            color: Colors.red[100],
-                            borderRadius: BorderRadius.circular(4.0),
-                          ),
-                          child: Text('Text'),
-                        ),
-                      );
-                    }),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(top: 20, left: 30, right: 280),
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(4),
-                  color: Colors.grey[300],
-                ),
-                width: 100,
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.monetization_on_outlined,
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 5),
-                      child: Text(
-                        'MONEY',
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(
-                top: 15,
-                left: 20,
-              ),
-              child: Container(
-                height: 100,
-                width: 120,
-                child: ListView.builder(
-                    scrollDirection: Axis.horizontal,
-                    itemCount: 5,
-                    itemBuilder: (BuildContext context, int index) {
-                      return Padding(
-                        padding: const EdgeInsets.only(left: 10),
-                        child: Container(
-                          height: 100,
-                          width: 120,
-                          decoration: BoxDecoration(
-                            color: Colors.red[100],
-                            borderRadius: BorderRadius.circular(4.0),
-                          ),
-                          child: Text('Text'),
-                        ),
-                      );
-                    }),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(top: 20, left: 30, right: 260),
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(4),
-                  color: Colors.grey[300],
-                ),
-                width: 100,
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.hot_tub_sharp,
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 5),
-                      child: Text(
-                        'HOT TOPICS',
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(
-                top: 15,
-                left: 20,
-              ),
-              child: Container(
-                height: 100,
-                width: 120,
-                child: ListView.builder(
-                    scrollDirection: Axis.horizontal,
-                    itemCount: 5,
-                    itemBuilder: (BuildContext context, int index) {
-                      return Padding(
-                        padding: const EdgeInsets.only(left: 10),
-                        child: Container(
-                          height: 100,
-                          width: 120,
-                          decoration: BoxDecoration(
-                            color: Colors.red[100],
-                            borderRadius: BorderRadius.circular(4.0),
-                          ),
-                          child: Text('Text'),
-                        ),
-                      );
-                    }),
-              ),
-            ),
-          ],
-        ),
+
+        body: tabs[_currentIndex],
+
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: _currentIndex,
           type: BottomNavigationBarType.fixed,
@@ -509,50 +52,47 @@ class HomeScreen extends StatelessWidget {
           showUnselectedLabels: true,
           elevation: 3,
           backgroundColor: Colors.white,
-          selectedItemColor: Colors.white,
-          unselectedItemColor: Colors.white,
-          items: <BottomNavigationBarItem>[
+          selectedItemColor: Colors.black,
+
+
+          items:  <BottomNavigationBarItem>[
+
             BottomNavigationBarItem(
-              icon: Icon(
-                Icons.home,
-                color: Colors.black,
-                size: 30,
-              ),
+              icon: new Image.asset('assets/img/MenuBars/motivationicon.png',height: 30,width: 30,),
+              label: '',
+
+            ),
+            BottomNavigationBarItem(
+
+
+              icon: new Image.asset('assets/img/MenuBars/crystaltrans.png',height: 30,width: 30,),
+              label: '',
+            ),
+            BottomNavigationBarItem(
+
+              icon: Icon(Icons.home_outlined,color: Colors.black, size: 60,),
               label: 'Home',
             ),
             BottomNavigationBarItem(
-              icon: Icon(
-                Icons.notifications,
-                color: Colors.black,
-                size: 30,
-              ),
-              label: 'Notifications',
+
+              icon: new Image.asset('assets/img/MenuBars/bookicontrans.png',height: 30,width: 30,),
+              label: '',
+
             ),
             BottomNavigationBarItem(
-              icon: Icon(
-                Icons.home,
-                color: Colors.black,
-                size: 60,
-              ),
-              label: 'Home',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(
-                Icons.person_pin,
-                color: Colors.black,
-                size: 30,
-              ),
-              label: 'Profile',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(
-                Icons.settings,
-                color: Colors.black,
-                size: 30,
-              ),
-              label: 'Settings',
+
+              icon: new Image.asset('assets/img/MenuBars/codingicontrans.png',height: 30,width: 30,),
+              label: '',
+
+
             ),
           ],
+          onTap: (index) {
+            setState(() {
+              _currentIndex = index;
+            });
+          },
+
         ),
       ),
     );
