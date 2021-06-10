@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:why_app/main.dart';
+import 'package:why_app/AdditionalData.dart';
 
 class Hottopic extends StatelessWidget {
   @override
@@ -396,20 +397,26 @@ class Hottopic extends StatelessWidget {
 
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
-              child: Container(
-                height: 170,
-                width: 300,
-                decoration: BoxDecoration(
-                    color: Colors.grey[300],
-                    borderRadius: BorderRadius.circular(10),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.grey.withOpacity(0.2),
-                        blurRadius: 19,
-                        spreadRadius: 9,
-                        offset: Offset(0, 3),
-                      )
-                    ]),
+              child: InkWell(
+                onTap:(){
+
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => AdditionalData()));
+                },
+                child: Container(
+                  height: 170,
+                  width: 300,
+                  decoration: BoxDecoration(
+                      color: Colors.grey[300],
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.withOpacity(0.2),
+                          blurRadius: 19,
+                          spreadRadius: 9,
+                          offset: Offset(0, 3),
+                        )
+                      ]),
+                ),
               ),
             ),
           ],

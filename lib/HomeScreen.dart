@@ -2,9 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:why_app/main.dart';
 import 'HomePage.dart';
-import 'NotificationsScreen.dart';
-import 'ProfileScreen.dart';
-import 'SettingsScreen.dart';
+import 'AdditionalData.dart';
+import 'RebootingVibes.dart';
+import 'RestoringEnergy.dart';
 import 'Brain.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -16,10 +16,10 @@ class _HomeScreenState extends State<HomeScreen> {
   int _currentIndex = 2;
   List<Widget> tabs = [
 
-    ProfileScreen(),
+    RebootingVibes(),
     SettingsScreen(),
     HomePage(),
-    NotificationsScreen(),
+    AdditionalData(),
     BrainIcon(),
 
   ];
@@ -27,10 +27,10 @@ class _HomeScreenState extends State<HomeScreen> {
   void initState() {
     tabs = [
 
-      ProfileScreen(),
+      RebootingVibes(),
       SettingsScreen(),
       HomePage(),
-      NotificationsScreen(),
+      AdditionalData(),
       BrainIcon(),
 
     ];

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:why_app/main.dart';
+import 'AdditionalData.dart';
 
 class RelationShip extends StatelessWidget {
   @override
@@ -20,14 +21,13 @@ class RelationShip extends StatelessWidget {
                   Image.asset('assets/img/MenuBars/relationshipiconfinal.png',height: 30,width: 30, color: Colors.black,),
                   Text(
                     'RELATIONSHIPS',
-                    style: TextStyle(fontSize: 30, color: Colors.black),
+                    style: TextStyle(fontSize: 20, color: Colors.black),
                   )
                 ],
               ),
               Padding(
                 padding: const EdgeInsets.only(
                   top: 10,
-
                 ),
                 child: Container(
                   height: 30,
@@ -397,20 +397,26 @@ class RelationShip extends StatelessWidget {
 
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
-              child: Container(
-                height: 170,
-                width: 300,
-                decoration: BoxDecoration(
-                    color: Colors.grey[300],
-                    borderRadius: BorderRadius.circular(10),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.grey.withOpacity(0.2),
-                        blurRadius: 19,
-                        spreadRadius: 9,
-                        offset: Offset(0, 3),
-                      )
-                    ]),
+              child: InkWell(
+                onTap:(){
+
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => AdditionalData()));
+                },
+                child: Container(
+                  height: 170,
+                  width: 300,
+                  decoration: BoxDecoration(
+                      color: Colors.grey[300],
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.withOpacity(0.2),
+                          blurRadius: 19,
+                          spreadRadius: 9,
+                          offset: Offset(0, 3),
+                        )
+                      ]),
+                ),
               ),
             ),
           ],
