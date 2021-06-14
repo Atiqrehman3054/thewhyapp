@@ -88,13 +88,16 @@ class _HomePageState extends State<HomePage> {
                             color: Colors.red[100],
                             borderRadius: BorderRadius.circular(4.0),
                           ),
-                          child: Text('Text'),
+                          child: Image.asset('assets/img/backgrounds/arguingoften.png'),
+                          ),
                         ),
-                      ),
                     );
                   }),
             ),
           ),
+
+
+
           Padding(
             padding: const EdgeInsets.only(top: 20, left: 30, right: 280),
             child: Container(
@@ -144,13 +147,15 @@ class _HomePageState extends State<HomePage> {
                             color: Colors.red[100],
                             borderRadius: BorderRadius.circular(4.0),
                           ),
-                          child: Text('Text'),
+                          child:Image.asset('assets/img/backgrounds/neverworksout.png'),
                         ),
                       ),
                     );
                   }),
             ),
           ),
+
+
           Padding(
             padding: const EdgeInsets.only(top: 20, left: 30, right: 280),
             child: Container(
@@ -203,7 +208,7 @@ class _HomePageState extends State<HomePage> {
                             color: Colors.red[100],
                             borderRadius: BorderRadius.circular(4.0),
                           ),
-                          child: Text('Text'),
+                          child: Image.asset('assets/img/backgrounds/alwayslettingyoudown.png'),
                         ),
                       ),
                     );
@@ -265,7 +270,7 @@ class _HomePageState extends State<HomePage> {
                             color: Colors.red[100],
                             borderRadius: BorderRadius.circular(4.0),
                           ),
-                          child: Text('Text'),
+                          child:Image.asset('assets/img/backgrounds/tryingtocontrol.png'),
                         ),
                       ),
                     );
@@ -327,7 +332,7 @@ class _HomePageState extends State<HomePage> {
                             color: Colors.red[100],
                             borderRadius: BorderRadius.circular(4.0),
                           ),
-                          child: Text('Text'),
+                          child:Image.asset('assets/img/backgrounds/yourtheparent.png'),
                         ),
                       ),
                     );
@@ -389,7 +394,7 @@ class _HomePageState extends State<HomePage> {
                             color: Colors.red[100],
                             borderRadius: BorderRadius.circular(4.0),
                           ),
-                          child: Text('Text'),
+                          child: Image.asset('assets/img/backgrounds/feelingjudged.png'),
                         ),
                       ),
                     );
@@ -451,7 +456,7 @@ class _HomePageState extends State<HomePage> {
                             color: Colors.red[100],
                             borderRadius: BorderRadius.circular(4.0),
                           ),
-                          child: Text('Text'),
+                          child: Image.asset('assets/img/backgrounds/cantfindapassion.png'),
                         ),
                       ),
                     );
@@ -515,7 +520,7 @@ class _HomePageState extends State<HomePage> {
                             color: Colors.red[100],
                             borderRadius: BorderRadius.circular(4.0),
                           ),
-                          child: Text('Text'),
+                          child: Image.asset('assets/img/backgrounds/problemsmanaging.png'),
                         ),
                       ),
                     );
@@ -578,7 +583,7 @@ class _HomePageState extends State<HomePage> {
                             color: Colors.red[100],
                             borderRadius: BorderRadius.circular(4.0),
                           ),
-                          child: Text('Text'),
+                          child: Image.asset('assets/img/backgrounds/powerofwords.png'),
                         ),
                       ),
                     );

@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class RebootingVibes extends StatelessWidget {
@@ -45,10 +46,15 @@ class RebootingVibes extends StatelessWidget {
                       height: 70,
                       width: 320,
                       decoration: BoxDecoration(
-                        color: Colors.green[300],
+                        color: Colors.brown[200],
                         borderRadius: BorderRadius.circular(8.0),
                       ),
-                      child: Center(child: Text('Text',style: TextStyle(color: Colors.white,fontSize: 20),)),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text('Give what you wish to receive,',style: TextStyle( fontSize:20),),
+                        ],
+                      ),
                     ),
                   );
                 }),

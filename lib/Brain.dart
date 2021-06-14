@@ -1,3 +1,5 @@
+
+
 import 'package:flutter/material.dart';
 
 class BrainIcon extends StatefulWidget {
@@ -79,15 +81,31 @@ class _BrainIconState extends State<BrainIcon> {
                               height: 180,
                               width: 220,
                               decoration: BoxDecoration(
-                                color: Colors.blue[200],
+                                color: Colors.red[200],
                                 borderRadius: BorderRadius.circular(7.0),
                               ),
-                              child: Center(
-                                  child: Text(
-                                'Text',
-                                style: TextStyle(
-                                    fontSize: 20, color: Colors.white),
-                              )),
+                              child: Row(
+                                  children: [
+                                    Image.asset('assets/img/backgrounds/a4.png',height: 60,width: 80,),
+
+                                    Padding(
+                                      padding: const EdgeInsets.only(top: 40),
+                                      child: Column(
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        children: [
+                                          Text("I have an abundance  "),
+                                          Text("of unity and"),
+                                          Text('ove within my '),
+                                          Text("heart and"),
+                                          Text(' in my relationship'),
+                                        ],
+                                      ),
+                                    ),
+                                  ]
+
+
+
+                              ),
                             ),
                           ),
                         );
@@ -139,15 +157,32 @@ class _BrainIconState extends State<BrainIcon> {
                               height: 180,
                               width: 220,
                               decoration: BoxDecoration(
-                                color: Colors.blue[200],
+                                color: Colors.greenAccent,
                                 borderRadius: BorderRadius.circular(7.0),
                               ),
-                              child: Center(
-                                  child: Text(
-                                'Text',
-                                style: TextStyle(
-                                    fontSize: 20, color: Colors.white),
-                              )),
+                              child: Row(
+                                
+                                children: [
+                                  Image.asset('assets/img/backgrounds/a4.png',height: 60,width: 80,),
+
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 40),
+                                    child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.start,
+                                      children: [
+                                        Text("I have an abundance  "),
+                                        Text("of unity and"),
+                                        Text('ove within my '),
+                                        Text("heart and"),
+                                        Text(' in my relationship'),
+                                      ],
+                                    ),
+                                  ),
+                               ]
+
+
+
+                              ),
                             ),
                           ),
                         );
@@ -199,15 +234,32 @@ class _BrainIconState extends State<BrainIcon> {
                               height: 180,
                               width: 220,
                               decoration: BoxDecoration(
-                                color: Colors.blue[200],
+                                color: Colors.grey[400],
                                 borderRadius: BorderRadius.circular(7.0),
                               ),
-                              child: Center(
-                                  child: Text(
-                                'Text',
-                                style: TextStyle(
-                                    fontSize: 20, color: Colors.white),
-                              )),
+                              child: Row(
+
+                                  children: [
+                                    Image.asset('assets/img/backgrounds/a4.png',height: 60,width: 80,),
+
+                                    Padding(
+                                      padding: const EdgeInsets.only(top: 40),
+                                      child: Column(
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        children: [
+                                          Text("I have an abundance  "),
+                                          Text("of unoty and"),
+                                          Text('ove within my '),
+                                          Text("heart and"),
+                                          Text(' in my relationship'),
+                                        ],
+                                      ),
+                                    ),
+                                  ]
+
+
+
+                              ),
                             ),
                           ),
                         );
@@ -262,15 +314,32 @@ class _BrainIconState extends State<BrainIcon> {
                               height: 180,
                               width: 220,
                               decoration: BoxDecoration(
-                                color: Colors.blue[200],
+                                color: Colors.blue[100],
                                 borderRadius: BorderRadius.circular(7.0),
                               ),
-                              child: Center(
-                                  child: Text(
-                                'Text',
-                                style: TextStyle(
-                                    fontSize: 20, color: Colors.white),
-                              )),
+                              child: Row(
+
+                                  children: [
+                                    Image.asset('assets/img/backgrounds/a4.png',height: 60,width: 80,),
+
+                                    Padding(
+                                      padding: const EdgeInsets.only(top: 40),
+                                      child: Column(
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        children: [
+                                          Text("I have an abundance  "),
+                                          Text("of unoty and"),
+                                          Text('ove within my '),
+                                          Text("heart and"),
+                                          Text(' in my relationship'),
+                                        ],
+                                      ),
+                                    ),
+                                  ]
+
+
+
+                              ),
                             ),
                           ),
                         );
@@ -322,15 +391,32 @@ class _BrainIconState extends State<BrainIcon> {
                               height: 180,
                               width: 220,
                               decoration: BoxDecoration(
-                                color: Colors.blue[200],
+                                color: Colors.grey,
                                 borderRadius: BorderRadius.circular(7.0),
                               ),
-                              child: Center(
-                                  child: Text(
-                                'Text',
-                                style: TextStyle(
-                                    fontSize: 20, color: Colors.white),
-                              )),
+                              child: Row(
+
+                                  children: [
+                                    Image.asset('assets/img/backgrounds/a4.png',height: 60,width: 80,),
+
+                                    Padding(
+                                      padding: const EdgeInsets.only(top: 40),
+                                      child: Column(
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        children: [
+                                          Text("I have an abundance  "),
+                                          Text("of unoty and"),
+                                          Text('ove within my '),
+                                          Text("heart and"),
+                                          Text(' in my relationship'),
+                                        ],
+                                      ),
+                                    ),
+                                  ]
+
+
+
+                              ),
                             ),
                           ),
                         );
@@ -385,15 +471,32 @@ class _BrainIconState extends State<BrainIcon> {
                               height: 180,
                               width: 220,
                               decoration: BoxDecoration(
-                                color: Colors.blue[200],
+                                color: Colors.brown[200],
                                 borderRadius: BorderRadius.circular(7.0),
                               ),
-                              child: Center(
-                                  child: Text(
-                                'Text',
-                                style: TextStyle(
-                                    fontSize: 20, color: Colors.white),
-                              )),
+                              child: Row(
+
+                                  children: [
+                                    Image.asset('assets/img/backgrounds/a4.png',height: 60,width: 80,),
+
+                                    Padding(
+                                      padding: const EdgeInsets.only(top: 40),
+                                      child: Column(
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        children: [
+                                          Text("I have an abundance  "),
+                                          Text("of unoty and"),
+                                          Text('ove within my '),
+                                          Text("heart and"),
+                                          Text(' in my relationship'),
+                                        ],
+                                      ),
+                                    ),
+                                  ]
+
+
+
+                              ),
                             ),
                           ),
                         );
@@ -445,15 +548,32 @@ class _BrainIconState extends State<BrainIcon> {
                               height: 180,
                               width: 220,
                               decoration: BoxDecoration(
-                                color: Colors.blue[200],
+                                color: Colors.blueGrey,
                                 borderRadius: BorderRadius.circular(7.0),
                               ),
-                              child: Center(
-                                  child: Text(
-                                'Text',
-                                style: TextStyle(
-                                    fontSize: 20, color: Colors.white),
-                              )),
+                              child: Row(
+
+                                  children: [
+                                    Image.asset('assets/img/backgrounds/a4.png',height: 60,width: 80,),
+
+                                    Padding(
+                                      padding: const EdgeInsets.only(top: 40),
+                                      child: Column(
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        children: [
+                                          Text("I have an abundance  "),
+                                          Text("of unoty and"),
+                                          Text('ove within my '),
+                                          Text("heart and"),
+                                          Text(' in my relationship'),
+                                        ],
+                                      ),
+                                    ),
+                                  ]
+
+
+
+                              ),
                             ),
                           ),
                         );
@@ -508,15 +628,32 @@ class _BrainIconState extends State<BrainIcon> {
                               height: 180,
                               width: 220,
                               decoration: BoxDecoration(
-                                color: Colors.blue[200],
+                                color: Colors.green[100],
                                 borderRadius: BorderRadius.circular(7.0),
                               ),
-                              child: Center(
-                                  child: Text(
-                                'Text',
-                                style: TextStyle(
-                                    fontSize: 20, color: Colors.white),
-                              )),
+                              child:Row(
+
+                                  children: [
+                                    Image.asset('assets/img/backgrounds/a4.png',height: 60,width: 80,),
+
+                                    Padding(
+                                      padding: const EdgeInsets.only(top: 40),
+                                      child: Column(
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        children: [
+                                          Text("I have an abundance  "),
+                                          Text("of unoty and"),
+                                          Text('ove within my '),
+                                          Text("heart and"),
+                                          Text(' in my relationship'),
+                                        ],
+                                      ),
+                                    ),
+                                  ]
+
+
+
+                              ),
                             ),
                           ),
                         );
@@ -567,15 +704,32 @@ class _BrainIconState extends State<BrainIcon> {
                               height: 180,
                               width: 220,
                               decoration: BoxDecoration(
-                                color: Colors.blue[200],
+                                color: Colors.orange[100],
                                 borderRadius: BorderRadius.circular(7.0),
                               ),
-                              child: Center(
-                                  child: Text(
-                                'Text',
-                                style: TextStyle(
-                                    fontSize: 20, color: Colors.white),
-                              )),
+                              child: Row(
+
+                                  children: [
+                                    Image.asset('assets/img/backgrounds/a4.png',height: 60,width: 80,),
+
+                                    Padding(
+                                      padding: const EdgeInsets.only(top: 40),
+                                      child: Column(
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        children: [
+                                          Text("I have an abundance  "),
+                                          Text("of unoty and"),
+                                          Text('ove within my '),
+                                          Text("heart and"),
+                                          Text(' in my relationship'),
+                                        ],
+                                      ),
+                                    ),
+                                  ]
+
+
+
+                              ),
                             ),
                           ),
                         );

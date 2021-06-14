@@ -60,6 +60,7 @@ class _AdditionalDataState extends State<AdditionalData> {
                   ),
                 ),
               ),
+              
               Padding(
                 padding: const EdgeInsets.only(
                   top: 15,
@@ -81,13 +82,25 @@ class _AdditionalDataState extends State<AdditionalData> {
                               height: 180,
                               width: 220,
                               decoration: BoxDecoration(
-                                color: Colors.blue[200],
+                                color: Colors.red[100],
                                 borderRadius: BorderRadius.circular(7.0),
                               ),
-                              child: Center(child: Text('Text',style: TextStyle(
-                                  fontSize: 20,
-                                  color: Colors.white
-                              ),)),
+                              child: Row(
+                                children: [
+                                  Image.asset('assets/img/Books/Rethink Love.jpeg',height: 110,width: 100,),
+                                  Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Text('Rethink Love',style: TextStyle(fontWeight: FontWeight.bold),),
+                                      SizedBox(
+                                        height: 10,
+                                      ),
+                                      Text('Monica Berg'),
+                                    ],
+                                  ),
+
+                                ],
+                              ),
                             ),
                           ),
                         );
@@ -138,13 +151,27 @@ class _AdditionalDataState extends State<AdditionalData> {
                               height: 180,
                               width: 220,
                               decoration: BoxDecoration(
-                                color: Colors.blue[200],
+                                color: Colors.grey[400],
                                 borderRadius: BorderRadius.circular(7.0),
                               ),
-                              child: Center(child: Text('Text',style: TextStyle(
-                                  fontSize: 20,
-                                  color: Colors.white
-                              ),)),
+                              child:  Row(
+                                children: [
+                                  Image.asset('assets/img/Books/On Love and Loneliness.jpg',height: 110,width: 100,),
+                                  Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Text('On Love And',style: TextStyle(fontWeight: FontWeight.bold),),
+
+                                      Text('Laneliness',style: TextStyle(fontWeight: FontWeight.bold),),
+                                      SizedBox(
+                                        height: 10,
+                                      ),
+                                      Text('Monica Berg'),
+                                    ],
+                                  ),
+
+                                ],
+                              ),
                             ),
                           ),
                         );
@@ -198,10 +225,24 @@ class _AdditionalDataState extends State<AdditionalData> {
                                 color: Colors.blue[200],
                                 borderRadius: BorderRadius.circular(7.0),
                               ),
-                              child: Center(child: Text('Text',style: TextStyle(
-                                  fontSize: 20,
-                                  color: Colors.white
-                              ),)),
+                              child: Row(
+                                children: [
+                                  Image.asset('assets/img/Books/toxicparentsurvivalguide.jpg',height: 110,width: 100,),
+                                  Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Text('The Toxic Parents',style: TextStyle(fontWeight: FontWeight.bold),),
+
+                                      Text('Survival Guide',style: TextStyle(fontWeight: FontWeight.bold),),
+                                      SizedBox(
+                                        height: 10,
+                                      ),
+                                      Text('Monica Berg'),
+                                    ],
+                                  ),
+
+                                ],
+                              ),
                             ),
                           ),
                         );
@@ -255,13 +296,27 @@ class _AdditionalDataState extends State<AdditionalData> {
                               height: 180,
                               width: 220,
                               decoration: BoxDecoration(
-                                color: Colors.blue[200],
+                                color: Colors.orange[300],
                                 borderRadius: BorderRadius.circular(7.0),
                               ),
-                              child: Center(child: Text('Text',style: TextStyle(
-                                  fontSize: 20,
-                                  color: Colors.white
-                              ),)),
+                              child: Row(
+                                children: [
+                                  Image.asset('assets/img/Books/whatdoyouwantfrommebook.jpg',height: 110,width: 100,),
+                                  Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Text('What do You',style: TextStyle(fontWeight: FontWeight.bold),),
+
+                                      Text('Want from me?',style: TextStyle(fontWeight: FontWeight.bold),),
+                                      SizedBox(
+                                        height: 10,
+                                      ),
+                                      Text('Monica Berg'),
+                                    ],
+                                  ),
+
+                                ],
+                              ),
                             ),
                           ),
                         );
@@ -313,13 +368,27 @@ class _AdditionalDataState extends State<AdditionalData> {
                               height: 180,
                               width: 220,
                               decoration: BoxDecoration(
-                                color: Colors.blue[200],
+                                color: Colors.greenAccent,
                                 borderRadius: BorderRadius.circular(7.0),
                               ),
-                              child: Center(child: Text('Text',style: TextStyle(
-                                  fontSize: 20,
-                                  color: Colors.white
-                              ),)),
+                              child: Row(
+                                children: [
+                                  Image.asset('assets/img/Books/thesiblingeffect.jpg',height: 110,width: 100,),
+                                  Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Text('The Sibling',style: TextStyle(fontWeight: FontWeight.bold),),
+
+                                      Text('Effect',style: TextStyle(fontWeight: FontWeight.bold),),
+                                      SizedBox(
+                                        height: 10,
+                                      ),
+                                      Text('Monica Berg'),
+                                    ],
+                                  ),
+
+                                ],
+                              ),
                             ),
                           ),
                         );
@@ -373,13 +442,27 @@ class _AdditionalDataState extends State<AdditionalData> {
                               height: 180,
                               width: 220,
                               decoration: BoxDecoration(
-                                color: Colors.blue[200],
+                                color: Colors.green[200],
                                 borderRadius: BorderRadius.circular(7.0),
                               ),
-                              child: Center(child: Text('Text',style: TextStyle(
-                                  fontSize: 20,
-                                  color: Colors.white
-                              ),)),
+                              child: Row(
+                                children: [
+                                  Image.asset('assets/img/Books/judgmentdetox.jpg',height: 110,width: 100,),
+                                  Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Text('judgment',style: TextStyle(fontWeight: FontWeight.bold),),
+
+                                      Text('detox',style: TextStyle(fontWeight: FontWeight.bold),),
+                                      SizedBox(
+                                        height: 10,
+                                      ),
+                                      Text('Monica Berg'),
+                                    ],
+                                  ),
+
+                                ],
+                              ),
                             ),
                           ),
                         );
@@ -431,13 +514,27 @@ class _AdditionalDataState extends State<AdditionalData> {
                               height: 180,
                               width: 220,
                               decoration: BoxDecoration(
-                                color: Colors.blue[200],
+                                color: Colors.brown[200],
                                 borderRadius: BorderRadius.circular(7.0),
                               ),
-                              child: Center(child: Text('Text',style: TextStyle(
-                                  fontSize: 20,
-                                  color: Colors.white
-                              ),)),
+                              child: Row(
+                                children: [
+                                  Image.asset('assets/img/Books/fearisnotanoption.jpg',height: 110,width: 100,),
+                                  Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Text('Fear Is Not An ',style: TextStyle(fontWeight: FontWeight.bold),),
+
+                                      Text('Option',style: TextStyle(fontWeight: FontWeight.bold),),
+                                      SizedBox(
+                                        height: 10,
+                                      ),
+                                      Text('Monica Berg'),
+                                    ],
+                                  ),
+
+                                ],
+                              ),
                             ),
                           ),
                         );
@@ -491,13 +588,27 @@ class _AdditionalDataState extends State<AdditionalData> {
                               height: 180,
                               width: 220,
                               decoration: BoxDecoration(
-                                color: Colors.blue[200],
+                                color: Colors.orange[300],
                                 borderRadius: BorderRadius.circular(7.0),
                               ),
-                              child: Center(child: Text('Text',style: TextStyle(
-                                  fontSize: 20,
-                                  color: Colors.white
-                              ),)),
+                              child:Row(
+                                children: [
+                                  Image.asset('assets/img/Books/sevenspirituallawsofsuccess.jpg',height: 110,width: 100,),
+                                  Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Text('The  Spiritual ',style: TextStyle(fontWeight: FontWeight.bold),),
+
+                                      Text('Laws of Success',style: TextStyle(fontWeight: FontWeight.bold),),
+                                      SizedBox(
+                                        height: 10,
+                                      ),
+                                      Text('Monica Berg'),
+                                    ],
+                                  ),
+
+                                ],
+                              ),
                             ),
                           ),
                         );
@@ -549,13 +660,27 @@ class _AdditionalDataState extends State<AdditionalData> {
                               height: 180,
                               width: 220,
                               decoration: BoxDecoration(
-                                color: Colors.blue[200],
+                                color: Colors.grey,
                                 borderRadius: BorderRadius.circular(7.0),
                               ),
-                              child: Center(child: Text('Text',style: TextStyle(
-                                  fontSize: 20,
-                                  color: Colors.white
-                              ),)),
+                              child:Row(
+                                children: [
+                                  Image.asset('assets/img/Books/theenergyofmoney.jpg',height: 110,width: 100,),
+                                  Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Text('The Energy Of',style: TextStyle(fontWeight: FontWeight.bold),),
+
+                                      Text('Word',style: TextStyle(fontWeight: FontWeight.bold),),
+                                      SizedBox(
+                                        height: 10,
+                                      ),
+                                      Text('Monica Berg'),
+                                    ],
+                                  ),
+
+                                ],
+                              ),
                             ),
                           ),
                         );

@@ -30,6 +30,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   font_awesome_flutter:
   fluttericon:
+  flutter_launcher_icons:
 
 dev_dependencies:
   flutter_test:
@@ -50,6 +51,8 @@ flutter:
   assets:
     - assets/img/backgrounds/
     - assets/img/MenuBars/
+    - assets/img/crystals/
+    - assets/img/Books/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -77,3 +80,8 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/img/backgrounds/image.png"

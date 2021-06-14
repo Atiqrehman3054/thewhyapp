@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:why_app/main.dart';
@@ -18,7 +19,12 @@ class RelationShip extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  Image.asset('assets/img/MenuBars/relationshipiconfinal.png',height: 30,width: 30, color: Colors.black,),
+                  Image.asset(
+                    'assets/img/MenuBars/relationshipiconfinal.png',
+                    height: 30,
+                    width: 30,
+                    color: Colors.black,
+                  ),
                   Text(
                     'RELATIONSHIPS',
                     style: TextStyle(fontSize: 20, color: Colors.black),
@@ -111,6 +117,11 @@ class RelationShip extends StatelessWidget {
                 height: 200,
                 width: 300,
                 decoration: kBoxDecoration(),
+                child: Image.asset(
+                  'assets/img/backgrounds/a7.png',
+                  height: 100,
+                  width: 200,
+                ),
               ),
             ),
 
@@ -165,14 +176,17 @@ class RelationShip extends StatelessWidget {
                         child: Wrap(
                           children: [
                             Container(
-                                height: 400,
-                                width: 250,
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(4),
-                                  color: Colors.grey[400],
-                                ),
+                              height: 400,
+                              width: 250,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(4),
+                                color: Colors.red[100],
+                              ),
+                              child: Padding(
+                                padding:
+                                    const EdgeInsets.only(top: 90, left: 15),
                                 child: Text(
-                                  'Text',
+                                  'Get In Touch With those feelings!',
                                   style: TextStyle(
                                     fontSize: 15,
                                     color: Colors.black,
@@ -180,10 +194,10 @@ class RelationShip extends StatelessWidget {
                                   ),
                                 ),
                               ),
+                            ),
                           ],
                         ),
-                        );
-
+                      );
                     }),
               ),
             ),
@@ -239,6 +253,42 @@ class RelationShip extends StatelessWidget {
                         offset: Offset(0, 3),
                       )
                     ]),
+                child: Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 20, vertical: 30),
+                      child: Row(
+                        children: [
+                          Image.asset(
+                            'assets/img/backgrounds/a7.png',
+                            height: 70,
+                            width: 70,
+                          ),
+                          Expanded(
+                              child: Text(
+                                  'i surrender to the unknown and trust that everything will work out in my favor.')),
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 20, vertical: 10),
+                      child: Row(
+                        children: [
+                          Image.asset(
+                            'assets/img/backgrounds/a7.png',
+                            height: 70,
+                            width: 70,
+                          ),
+                          Expanded(
+                              child: Text(
+                                  'I trust my seld to deal with each new hurdle with wisdom and grace')),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
 
@@ -290,21 +340,41 @@ class RelationShip extends StatelessWidget {
                       return Padding(
                         padding: const EdgeInsets.only(left: 10),
                         child: Container(
-                          height: 400,
-                          width: 250,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(4),
-                            color: Colors.brown[300],
-                          ),
-                          child: Text(
-                            'Text',
-                            style: TextStyle(
-                              fontSize: 15,
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
+                            height: 400,
+                            width: 250,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(4),
+                              color: Colors.blueGrey,
                             ),
-                          ),
-                        ),
+                            child: Column(
+                              children: [
+                                SizedBox(
+                                  height: 30,
+                                ),
+                                Image.asset(
+                                  'assets/img/MenuBars/mirroricon.png',
+                                  height: 50,
+                                  width: 50,
+                                ),
+                                Text(
+                                  '3rd Chakra',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 20,
+                                  ),
+                                ),
+                                Expanded(
+                                  child: Text(
+                                    "The Solar plexus chakra is an atea that stores how "
+                                    "yor view yourself and your beliedf of your capabilites linked to the"
+                                    " ego and where gut feelings occur",
+                                    style: TextStyle(
+                                      fontSize: 15,
+                                    ),
+                                  ),
+                                )
+                              ],
+                            )),
                       );
                     }),
               ),
@@ -359,6 +429,62 @@ class RelationShip extends StatelessWidget {
                         offset: Offset(0, 3),
                       )
                     ]),
+                child: Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 20, vertical: 10),
+                      child: Row(
+                        children: [
+                          Image.asset(
+                            'assets/img/crystals/chrysoprasestone.png',
+                            height: 90,
+                            width: 90,
+                          ),
+                          Expanded(
+                              child: Column(
+                            children: [
+                              Text(
+                                'Sodalite',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                  'i surrender to the unknown and trust that everything will work out in my favor.'),
+                            ],
+                          )),
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 20, vertical: 10),
+                      child: Row(
+                        children: [
+                          Image.asset(
+                            'assets/img/crystals/azurite.png',
+                            height: 90,
+                            width: 90,
+                          ),
+                          Expanded(
+                              child: Column(
+                            children: [
+                              Text(
+                                'azurite',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                  'i surrender to the unknown and trust that everything will work out in my favor.'),
+                            ],
+                          )),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
 
@@ -398,9 +524,11 @@ class RelationShip extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
               child: InkWell(
-                onTap:(){
-
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => AdditionalData()));
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => AdditionalData()));
                 },
                 child: Container(
                   height: 170,
@@ -416,6 +544,26 @@ class RelationShip extends StatelessWidget {
                           offset: Offset(0, 3),
                         )
                       ]),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 30),
+                    child: Row(
+                      children: [
+                        Image.asset(
+                          'assets/img/Books/Rethink Love.jpeg',
+                          height: 150,
+                          width: 120,
+                        ),
+                        SizedBox(
+                          width: 20,
+                        ),
+                        Image.asset(
+                          'assets/img/Books/Daring to trust.jpg',
+                          height: 150,
+                          width: 120,
+                        ),
+                      ],
+                    ),
+                  ),
                 ),
               ),
             ),
