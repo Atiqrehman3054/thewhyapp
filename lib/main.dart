@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:why_app/HomeScreen.dart';
 import 'dart:async';
 
+import 'package:why_app/RelationShip.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -31,7 +33,7 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   startTime() async {
-    var duration = new Duration(seconds: 6);
+    var duration = new Duration(seconds: 2);
     return new Timer(duration, route);
   }
 
